@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(94, 94, 94);
+    color: white;
+    /* font-family: monospace; */
+}
+
+.section{
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 0px;
+}
+@media screen and (max-width: 898px) {
+    .section{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.subject{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+#slog{
+    font-family: monospace;
+}
+#slog, .hd{
+    font-weight: 400;
+    /* color: rgb(110, 110, 110); */
+    color: rgb(231, 189, 0);
+}
+.hd{
+    margin-top: -20px;
+}
+@media screen and (max-width: 898px) {
+    .subject{
+        width: 75%;
+        margin: auto;
+        position: relative;
+        margin-top: 20px;
+    }
+    .subject h2, .subject p{
+        margin: auto;
+        text-align: left;
+    }
+    #slog{
+        margin: auto;
+        font-size: xx-large;
+        width: 90%;
+        margin-left: 55px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #slog{
+        margin: auto;
+        font-size: large;
+        width: 90%;
+        margin-left: 20px;
+    }
+    .subject{
+        width: 100%;
+    }
+}
+@keyframes onload {
+    0%{
+        opacity: 0;      
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

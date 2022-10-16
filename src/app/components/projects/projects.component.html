@@ -1,0 +1,27 @@
+<section class="section">
+    <app-frame path='' bdColor="#00ff222c"></app-frame>
+    <div class="subject">
+        <div id="project">
+            <div class="project osec" *ngFor="let project of projects">
+                <div class="project isec">
+                    <!-- <div id="img-container">
+                        <img [src]="'../../../assets/media/images/'+project.imgUrl" alt="">
+                    </div> -->
+                    <div class="overlay"></div>
+                    <img [src]="'../../../assets/media/images/'+project.imgUrl" alt="">
+                    <div class="tools text-dark">
+                        <div *ngFor="let tech of project.tech">{{ tech }}</div>
+                    </div>
+                    <div class="p-link">
+                        <app-btn margin="5px" text="View Project 🔗️" bdColor="green" bgColor="white"></app-btn>
+                        <app-btn margin="5px" text="View Code ⚙️" bgColor="white" bdColor="green"></app-btn>
+                    </div>
+                </div>
+                <h4>{{ project.title }}</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<div>
+    <app-media-accounts></app-media-accounts>
+</div>

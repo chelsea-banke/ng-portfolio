@@ -1,0 +1,184 @@
+header{
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 10px 15px;
+    background-color: rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(231, 189, 0);
+}
+#profile-icon{
+    width: 45px;
+    border-radius: 20px;
+    margin-top: -5px;
+    border-bottom: 1px solid black;
+}
+header h1{
+    margin-top: 15px;
+}
+header h1 span{
+    color: rgb(231, 189, 0);
+}
+nav{
+    position: fixed;
+    height: 100vh;
+    padding: 25px;
+    border-right: 1px solid rgb(231, 189, 0);
+    background-color: rgb(51, 51, 51);
+}
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 47%;
+    margin-top: 19vh;
+    padding: 5px;
+    border-radius: 5px;    
+    background-color: rgb(51, 51, 51);
+}
+#nav-bar button{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 0px 2px rgb(121, 121, 121);
+}
+#nav-bar button:hover{
+    border: 1px solid #00e400 !important;
+}
+#nav-bar img{
+    width: 100%;
+}
+#content{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 15%;
+    padding: 20px;
+}
+#content div{
+    margin-top: 2%;
+}
+.theme-switch{
+    border-radius: 50px;
+    background-color: rgb(255, 230, 198) !important;
+    border: 1px solid orange;
+}
+
+.fig{
+    position: fixed;
+    border: 1px solid rgba(255, 166, 0, 0.171);
+    z-index: -1;
+    margin-top: 100px;
+    right: 20px;
+    animation: bar 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#f1{
+    width: 200px;
+    height: 200px;
+}
+#f2{
+    width: 400px;
+    height: 100px;
+}
+#f3{
+    width: 100px;
+    height: 400px;
+}
+#f4{
+    width: 600px;
+    height: 50px;
+}
+#f5{
+    width: 50px;
+    height: 600px;
+}
+
+#f6{
+    width: 200px;
+    height: 200px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ff0007;
+    z-index: -1;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 50px;
+    animation: none;
+}
+
+.fig2{
+    position: fixed;
+    border: 1px solid #00ff222c;
+    z-index: -1;
+    margin-top: 100px;
+    /* animation: bar 3s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    left: 150px;
+}
+#f7{
+    width: 200px;
+    height: 200px;
+}
+#f8{
+    width: 400px;
+    height: 100px;
+}
+#f9{
+    width: 100px;
+    height: 400px;
+}
+#f10{
+    width: 600px;
+    height: 50px;
+}
+#f11{
+    width: 50px;
+    height: 600px;
+}
+@media screen and (max-width: 600px) {
+    header h1{
+        margin-top: 20px;
+    }
+    nav{
+        bottom: 0px;
+        height: fit-content;
+        border: none;
+        border-top: 1px solid rgb(231, 189, 0);
+        width: 100vw;
+        /* background-color: rgb(255, 255, 255); */
+        z-index: 1;
+        padding: 0px;
+    }
+    #nav-bar{
+        width: fit-content;
+        flex-direction: row;
+        margin: auto;
+    }
+    #nav-bar button{
+        margin: 5px;
+    }
+
+    #content{
+        margin-left: 0%;
+        padding-bottom: 150px;
+    }
+    .fig2{
+        left: 20px;
+        animation-direction: reverse;
+    }
+    /* .fig, .fig2{
+        animation: bar 2s;
+        animation-timing-function: linear;
+        animation-timing-function: ease-out;
+    } */
+}
+@keyframes bar {
+    0%{transform: rotate(180deg)}
+    100%{transform: rotate(0deg)}
+}
