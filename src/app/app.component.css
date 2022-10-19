@@ -42,7 +42,8 @@ nav{
     height: 50px;
     margin: auto;
     background-color: rgb(241, 241, 241);
-    box-shadow: 0px 0px 2px rgb(121, 121, 121);
+    /* box-shadow: 0px 0px 2px rgb(121, 121, 121); */
+    box-shadow: 0px 0px 5px 0px rgb(51, 51, 51) inset;
 }
 #nav-bar button:hover{
     border: 1px solid #00e400 !important;
@@ -172,11 +173,6 @@ nav{
         left: 20px;
         animation-direction: reverse;
     }
-    /* .fig, .fig2{
-        animation: bar 2s;
-        animation-timing-function: linear;
-        animation-timing-function: ease-out;
-    } */
 }
 @keyframes bar {
     0%{transform: rotate(180deg)}

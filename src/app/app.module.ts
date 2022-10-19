@@ -34,7 +34,7 @@ import { ContactComponent } from './components/contact/contact.component';
       { path: 'projects', component: ProjectsComponent},
       { path: 'socials', component: SocialsComponent },
       { path: 'contact', component: ContactComponent },
-      { path: '', redirectTo: 'contact', pathMatch: 'full' }
+      { path: '', redirectTo: 'home', pathMatch: 'full' }
     ]),
   ],
   providers: [],
